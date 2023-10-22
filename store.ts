@@ -139,28 +139,4 @@ export default class Store<TState, TReducers> {
       };
     }
 }
-  
-
-const store = Store.createStore({data: ""}, {
-  data: (state: any, action: any) => {
-    switch (action.type) {
-      case "UPDATE_DATA":
-        return action.payload;
-      default:
-        return state;
-    }
-  }
-});
-
-Store.applyMiddleware(store, logger, thunk);
-
-const unsubscribe = Store.applyValidators({
-  store: store,
-  validators: { 
-    "data": (value: any) => value.length > 0
-  },
-  onValidationFail: (key: string, value: any) => {
-    console.log(`Validation failed for ${key} with value ${value}`);
-  }
-});
 
