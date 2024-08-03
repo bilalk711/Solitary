@@ -25,7 +25,7 @@ Solitary is designed to simplify state management in your applications. With Sol
 
 ## Installation
 
-To use Solitary in your project, include the necessary files in your project or integrate it through your module bundler.
+To use Solitary in your project, run `npm i solitary`
 
 ## Basic Usage
 
