@@ -127,8 +127,8 @@ export default class Store<TState, TReducers> {
       store.subscribe(() => {
         const state = store.getState();
         Object.keys(validators).forEach((key) => {
-          const validator = validators[key];
-          const value = state[key];
+          const validator = validators[key as keyof Record<string, Function>];
+          const value = state[key as keyof TState];
           if (validator && !validator(value)) {
             onValidationFail(key, value);
           }

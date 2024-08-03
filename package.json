@@ -1,0 +1,28 @@
+{
+  "name": "solitary",
+  "version": "1.4.0",
+  "description": "A simple store for global state management in JavaScript.",
+  "main": "dist/index.js",      
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rmdir /s /q dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilalk711/solitary.git"
+  },
+  "keywords": [
+    "store",
+    "frontend",
+    "state",
+    "management"
+  ],
+  "author": "Bilal Kazmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilalk711/solitary/issues"
+  },
+  "homepage": "https://github.com/bilalk711/solitary#readme"
+}

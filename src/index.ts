@@ -27,3 +27,5 @@ const unsubscribe = Store.applyValidators({
         console.log(`Validation failed for ${key} with value ${value}`);
     }
 });
+
+export { thunk, Store, logger };
