@@ -9,9 +9,10 @@ const store = Store.createStore({data: ""}, {
           return action.payload;
         default:
           return state;
-      }
     }
-  });
+  }
+});
+
   
 const loggerMiddleware = logger();
 const thunkMiddleware = thunk(store);
