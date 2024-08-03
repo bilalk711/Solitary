@@ -84,6 +84,7 @@ const unsubscribe = Solitary.applyValidators({
 
 ### API Overview
 **Solitary.createStore**
+
 Description: Creates a new store with the specified initial state and reducer function.
 
 Parameters:
@@ -93,6 +94,7 @@ reducer: A function that handles state transitions based on actions.
 Returns: A store instance.
 
 **Solitary.applyMiddleware**
+
 Description: Applies middleware to the store to extend its functionality.
 
 Parameters:
@@ -102,6 +104,7 @@ middlewares: An array of middleware functions.
 Returns: The store with applied middleware.
 
 **Solitary.applyValidators**
+
 Description: Applies validators to the store to enforce constraints on state changes.
 
 Parameters:
